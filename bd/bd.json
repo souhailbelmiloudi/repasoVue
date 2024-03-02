@@ -1,0 +1,33 @@
+{
+    "provincias":[
+        {
+            "provincia":"Madrid",
+            "localidad":"Pozuelo de Alarcón"
+            
+        },
+        {
+            "provincia":"Madrid",
+            "localidad":"Madrid"
+        },
+        {
+            "provincia":"Barcelona",
+            "localidad":"Sabadell"
+        },
+        {
+            "provincia":"Barcelona",
+            "localidad":"Barcelona"
+        },
+        {
+            "provincia":"Cuenca",
+            "localidad":"Cuenca"
+        },
+        {
+            "provincia":"Cuenca",
+            "localidad":"Tarancón"
+        },
+        {
+            "provincia":"Cuenca",
+            "localidad":"Belmonte"
+        }
+    ]   
+}
