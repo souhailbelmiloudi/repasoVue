@@ -1,14 +1,11 @@
-
 <script setup lang="ts">
-import NaveBar from './views/NaveBar.vue';
-
 
 </script>
+
 <template>
     <div>
-      <NaveBar/>
+        <h1>Lista</h1>
     </div>
-    <router-view/>
 </template>
 <style scoped>
 
