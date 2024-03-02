@@ -1,33 +1,108 @@
 {
-    "provincias":[
-        {
-            "provincia":"Madrid",
-            "localidad":"Pozuelo de Alarcón"
-            
-        },
-        {
-            "provincia":"Madrid",
-            "localidad":"Madrid"
-        },
-        {
-            "provincia":"Barcelona",
-            "localidad":"Sabadell"
-        },
-        {
-            "provincia":"Barcelona",
-            "localidad":"Barcelona"
-        },
-        {
-            "provincia":"Cuenca",
-            "localidad":"Cuenca"
-        },
-        {
-            "provincia":"Cuenca",
-            "localidad":"Tarancón"
-        },
-        {
-            "provincia":"Cuenca",
-            "localidad":"Belmonte"
-        }
-    ]   
+  "provincias": [
+    {
+      "provincia": "Madrid",
+      "localidad": "Pozuelo de Alarcón"
+    },
+    {
+      "provincia": "Madrid",
+      "localidad": "Madrid"
+    },
+    {
+      "provincia": "Barcelona",
+      "localidad": "Sabadell"
+    },
+    {
+      "provincia": "Barcelona",
+      "localidad": "Barcelona"
+    },
+    {
+      "provincia": "Cuenca",
+      "localidad": "Cuenca"
+    },
+    {
+      "provincia": "Cuenca",
+      "localidad": "Tarancón"
+    },
+    {
+      "provincia": "Cuenca",
+      "localidad": "Belmonte"
+    }
+  ],
+  "Empresas": [
+    {
+      "nombre": "Telefónica",
+      "localidad": "Madrid"
+    },
+    {
+      "nombre": "Vodafone",
+      "localidad": "Madrid"
+    },
+    {
+      "nombre": "Orange",
+      "localidad": "Madrid"
+    },
+    {
+      "nombre": "Movistar",
+      "localidad": "Madrid"
+    },
+    {
+      "nombre": "Telefónica",
+      "localidad": "Barcelona"
+    },
+    {
+      "nombre": "Vodafone",
+      "localidad": "Barcelona"
+    },
+    {
+      "nombre": "Orange",
+      "localidad": "Barcelona"
+    },
+    {
+      "nombre": "Movistar",
+      "localidad": "Barcelona"
+    },
+    {
+      "nombre": "Telefónica",
+      "localidad": "Cuenca"
+    },
+    {
+      "nombre": "Vodafone",
+      "localidad": "Cuenca"
+    },
+    {
+      "nombre": "Orange",
+      "localidad": "Cuenca"
+    },
+    {
+      "nombre": "Movistar",
+      "localidad": "Cuenca"
+    }
+  ],
+  "Alumnos": [
+    {
+      "id": "dcf8",
+      "nombre": "souhail",
+      "edad": "26",
+      "empresa": "Vodafone"
+    },
+    {
+      "id": "a33a",
+      "nombre": "ssss",
+      "edad": "sss",
+      "empresa": "No tiene empresa"
+    },
+    {
+      "id": "3168",
+      "nombre": "aa",
+      "edad": "",
+      "empresa": "No tiene empresa"
+    },
+    {
+      "id": "63d8",
+      "nombre": "alvaro",
+      "edad": "25",
+      "empresa": "Orange"
+    }
+  ]
 }
