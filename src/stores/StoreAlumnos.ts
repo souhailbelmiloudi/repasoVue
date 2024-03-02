@@ -1,23 +1,28 @@
 import { reactive } from "vue";
 import type { Alumnos } from '@/util/interfaces';
-import { addDatos,getAllDatos } from '@/crudAxios/miCrud';
+import { addDatos,getAllDatos,deleteDatos } from '@/crudAxios/miCrud';
 
 
 export const storeAlumnos =reactive ({
     Cargando :<Boolean>false,
     lista:<Alumnos[]>[],
 
-    addAlumno (datos:Alumnos){
-        this.lista.push(datos);
-        addDatos("Alumnos",datos)
+    addAlumno (datos:{id:string,nombre:string,edad:string,empresa:string,localidad:string}){
+        addDatos("Alumnos",{nombre:datos.nombre,edad:datos.edad,empresa:datos.empresa,localidad:datos.localidad})
     },
 
- verTodos (){
+    verTodos (){
         this.Cargando =true
         setTimeout(async ()=>{
             this.lista= await getAllDatos("Alumnos")
-        },2000)
+        },1)
         this.Cargando =false
+    },
+
+    borrarAlumno (id:string){
+        this.verTodos()
+        deleteDatos("Alumnos",id)
+
     }
 
 })

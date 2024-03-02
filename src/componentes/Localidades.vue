@@ -1,17 +1,15 @@
 <script setup lang="ts">
 import {computed, onMounted, ref } from 'vue'
 import { getAllDatos } from '@/crudAxios/miCrud';
+import type { provincias } from '@/util/interfaces';
 
-interface provincias {
-    provincia : string,
-    localidad :string
-}
 
 const ListaObjetos = ref<provincias[]>();
 const ListaProvencias = ref<string[]>();
 const provinciaSelecionada=ref<string>("Madrid")
 const LocalidadSelect= ref<string>()
 
+const emit = defineEmits(['changeLocalidades'])
 
 
 const cargarDatos = async ()  => {
@@ -24,6 +22,8 @@ const cargarDatos = async ()  => {
     return ListaObjetos.value?.filter(el=>el.provincia===provinciaSelecionada.value)
                               .map(el=>el.localidad)
  })
+
+
 
 
  
@@ -40,18 +40,13 @@ onMounted(()=>{
 <template>
     <div>
        
-        <h1>Localidades</h1>
-        <select name="" id="" v-model="provinciaSelecionada">
+        <label>Localidades</label>
+        <select name="" id="" v-model="provinciaSelecionada" @change="emit('changeLocalidades',provinciaSelecionada)">
             <option v-for="provincia in ListaProvencias" :key="provincia">{{ provincia }}</option>
         </select>
-        <select name="" id="" v-model="LocalidadSelect">
+        <select name="" id="" v-model="LocalidadSelect"  >
             <option v-for="provincia in ListaLocalidades" :key="provincia">{{ provincia }}</option>
-        </select>
-        <p>  Provencia :{{ provinciaSelecionada }} </p>
-        <p>  Localidad :{{ LocalidadSelect }}</p>
-
-       
-     
+        </select>     
     </div>
 </template>
 <style scoped>
